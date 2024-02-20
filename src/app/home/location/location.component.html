@@ -1,0 +1,244 @@
+<div class="wrapper">
+    <div class="page-header clear-filter" filter-color="orange">
+    <div class="page-header-image rellax-header" data-rellax-speed="-7" style="background-image: url('https://wallpapers.com/images/hd/3d-travel-1920-x-1200-wallpaper-jjlcr369qdpuiefs.jpg');">
+
+    </div>
+      <div class="container">
+          <div class="content-center brand">
+              <img class="n-logo" src="assets/img/now-logo.png" alt="">
+              <h1 class="h1-seo">Now UI Kit.</h1>
+              <h3>A beautiful Bootstrap 4 UI kit. Yours free.</h3>
+          </div>
+          <!-- <h6 class="category category-absolute">Designed by
+              <a href="https://invisionapp.com/" target="_blank">
+                  <img src="assets/img/invision-white-slim.png" class="invision-logo" />
+              </a>. Coded by
+              <a href="https://www.creative-tim.com" target="_blank">
+                  <img src="assets/img/creative-tim-white-slim2.png" class="creative-tim-logo" />
+              </a>.</h6> -->
+      </div>
+      <div class="main" style="pointer-events: none;">
+        <div class="section section-images" >
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="hero-images-container">
+                            <img src="https://cdni.iconscout.com/illustration/premium/thumb/traveling-and-vacation-3237299-2700397.png" alt="">
+                        </div>
+                        <div class="hero-images-container-1">
+                            <img src="https://i.pinimg.com/originals/7b/4c/f0/7b4cf0b496d44b277e1bb5e6845296df.png" alt="">
+                        </div>
+                        <div class="hero-images-container-2">
+                            <img src="https://static.vecteezy.com/system/resources/previews/011/219/951/original/travelling-vacation-design-illustration-free-png.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+  </div>
+
+  <div class="section section-basic" style="margin-top:200px">
+    <div class="container">
+            <div class="row">
+    <!-- filter -->
+                <div _ngcontent-fps-c64="" class="col-sm-6 col-lg-3">
+                    <div _ngcontent-fps-c64="" class="form-group">
+                        <input _ngcontent-fps-c64="" [(ngModel)]="name" type="text" value="" placeholder="Country Name" class="form-control">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <p class="category">Price ( $ )</p>
+                    <nouislider class="slider slider-primary" [connect]="true" [min]="0" [max]="100" [step]="1" [(ngModel)]="price" [tooltips]="true"></nouislider>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <p class="category">Search for :</p>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" [(ngModel)]="hotels" checked>
+                            <span class="form-check-sign"></span>
+                            Hotels
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" [(ngModel)]="restaurents">
+                            <span class="form-check-sign"></span>
+                            Restaurents
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" [(ngModel)]="intrestTargets">
+                            <span class="form-check-sign"></span>
+                            Attraction Targets
+                        </label>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <p class="category">Rating</p>
+                    <div class="form-check form-check-radio">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="radio" [(ngModel)]="revieww1" name="exampleRadios" id="exampleRadios2" value="option3">
+                            <span class="form-check-sign"></span>
+                            Excellent
+                        </label>
+                    </div>
+                    <div class="form-check form-check-radio">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="radio" [(ngModel)]="revieww2" name="exampleRadios" id="exampleRadios1" value="option1">
+                            <span class="form-check-sign"></span>
+                            Very Good
+                        </label>
+                    </div>
+                    <div class="form-check form-check-radio">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="radio" [(ngModel)]="revieww3" name="exampleRadios" id="exampleRadios1" value="option2">
+                            <span class="form-check-sign"></span>
+                            Wonderful
+                        </label>
+                    </div>
+                    <div class="form-check form-check-radio">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="radio" [(ngModel)]="revieww4" name="exampleRadios" id="exampleRadios2" value="option4">
+                            <span class="form-check-sign"></span>
+                            Exceptional
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h4>Check-in Date</h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="datepicker-container">
+                                <div class="form-group">
+                                  <input class="form-control datetimepicker" placeholder="06/07/2017"
+                                       name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker" (click)="d.toggle()" data-color="orange">
+                                      </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--                 end collapse -->
+                </div>
+                <div _ngcontent-fps-c64="" class="col-12">
+                    <button _ngcontent-fps-c64="" (click)="SearchLocations()" class="btn btn-primary" style="float:right">Search Locations</button>
+                </div>
+                <div _ngcontent-fps-c64="" class="col-12">
+                    <button _ngcontent-fps-c64="" (click)="SearchHotels()" class="btn btn-primary" style="float:right">Search Hotels</button>
+                </div>
+            </div>
+    <!-- cards results -->
+<div class="col-12  cardscontainer" style="padding: 20px; background: #e2ecf4; border-radius: 7px;">
+    <div class="row">
+        <div class="col-4 travelCard" *ngFor="let block of results">
+            <div class="containerCustom">
+                <div class="wlp col-12" style="background-image: url({{block.image}});">
+                    <div class="row justify-content-between">
+                        <span class="privacy">
+                            {{ block.reviewsCount }}
+                        </span>
+                        <span class="like">
+                            <i _ngcontent-wgu-c65="" class="now-ui-icons ui-2_favourite-28"></i>
+                        </span>
+                    </div>
+                    <span class="clndr">
+                        <i _ngcontent-wgu-c74="" class="now-ui-icons ui-1_calendar-60"></i>
+                    </span>
+                </div>
+                <div class="info col-12">
+                    <div class="row justify-content-between" style="padding: 15px;">
+                        <div class="titleName">
+                            <span>
+                                {{ block.name }}
+                            </span>
+                            <div class="rate">
+                                <i _ngcontent-wgu-c74="" class="now-ui-icons objects_diamond"></i>
+                                <span>
+                                    {{ block.rate }}
+                                </span>
+                            </div>
+                        </div>
+                        <div class="location">
+                            <i _ngcontent-wgu-c74="" class="now-ui-icons location_pin"></i>
+                            {{ block.city }}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="price">
+                            $ 150 
+                        </div>
+                    </div>
+                    <!-- <div class="row">
+                        :)
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                <!-- <div class="col-3 ResCard" *ngFor="let block of results">
+                    <div class="container">
+                        <div class="wallpaper" style="background-image: url({{block.image}});">
+                        </div>
+                        <h3 class="title">
+                            {{ block.name }}
+                        </h3>
+                        <div class="row">
+                            <div class="col">
+                                {{ block.country }} {{ block.city }}
+                            </div>
+                            <div class="col">
+                               Price : {{ block.price }} $
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                {{ block.description }}
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                Review : {{ block.avgReview }}
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div> -->
+    </div>
+  </div>
+  
+  <footer class="footer" data-background-color="black" style="margin-top: 500px;">
+    <div class="container">
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://www.creative-tim.com">
+                        Creative Tim
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.creative-tim.com/about-us">
+                        About Us
+                    </a>
+                </li>
+                <li>
+                    <a href="http://blog.creative-tim.com">
+                        Blog
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/creativetimofficial/now-ui-kit/blob/master/LICENSE.md">
+                        MIT License
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="copyright">
+            &copy;
+          Designed by
+            <a href="https://www.invisionapp.com" target="_blank">Invision</a>. Coded by
+            <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
+        </div>
+    </div>
+</footer>
+</div>

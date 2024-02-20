@@ -22,4 +22,8 @@ export class HomeService {
   SearchLocations(country, date : Date, max, min, review, currency){
     return this.http.get(`${this.urlLocations}?country=${country}&date=${date.getTime()}&maxPrice=${max}&minPrice=${min}&avgReview=${review}&currency=${currency}`);
   }
+
+  //restaurents
+
+  //https://travel-import.onrender.com/api/v1/restaurants
 }
