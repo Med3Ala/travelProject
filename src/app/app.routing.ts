@@ -9,10 +9,16 @@ import { LoginComponent } from './examples/login/login.component';
 import { ProfileComponent } from './examples/profile/profile.component';
 import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
 import { HomeComponent } from './home/home.component';
+import { HotelComponent } from './home/hotel/hotel.component';
+import { RestaurentComponent } from './home/restaurent/restaurent.component';
+import { LocationComponent } from './home/location/location.component';
 
 const routes: Routes =[
     { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: 'home',                 component: HomeComponent},
+    { path: 'hotel',                component: HotelComponent},
+    { path: 'restaurent',           component: RestaurentComponent},
+    { path: 'location',             component: LocationComponent},
     { path: 'index',                component: ComponentsComponent },
     { path: 'nucleoicons',          component: NucleoiconsComponent },
     { path: 'examples/landing',     component: LandingComponent },
