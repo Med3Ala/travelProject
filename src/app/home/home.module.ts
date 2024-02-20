@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { RestaurentComponent } from './restaurent/restaurent.component';
 import { HotelComponent } from './hotel/hotel.component';
 import { LocationComponent } from './location/location.component';
+import { ChatBotComponent } from './chat-bot/chat-bot.component';
 
 
 
@@ -17,7 +18,8 @@ import { LocationComponent } from './location/location.component';
     HomeComponent,
     RestaurentComponent,
     HotelComponent,
-    LocationComponent
+    LocationComponent,
+    ChatBotComponent
   ],
   imports: [
     CommonModule,

@@ -58,28 +58,8 @@ export class HomeComponent implements OnInit {
   }
 
   SearchLocations(){
-    // console.log("name",this.name)
-    // console.log("price",this.price)
-    // console.log("hotels",this.hotels)
-    // console.log("restaurents",this.restaurents)
-    // console.log("intrestTargets",this.intrestTargets)
-    // console.log("revieww1",this.revieww1)
-    // console.log("revieww2",this.revieww2)
-    // console.log("revieww3",this.revieww3)
-    // console.log("revieww4",this.revieww4)
-    // console.log("model",this.model)
-    this.homeService.SearchLocations('France', new Date(), 100, 0, 0 , '$')
-    .subscribe((data:any)=>{
-      console.log(data)
-      this.results = data.results
-    })
   }
   SearchHotels(){
-    this.homeService.SearchHotels('Paris', new Date(), 100, 0, 0 , '$')
-    .subscribe((data:any)=>{
-      console.log(data)
-      this.results = data.results
-    })
   }
 
 }

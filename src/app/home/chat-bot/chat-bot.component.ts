@@ -1,13 +1,13 @@
 import { Component, OnInit, Renderer2 } from '@angular/core';
 import { NgbDateStruct, NgbAccordionConfig } from '@ng-bootstrap/ng-bootstrap';
-import { HomeService } from '../home.service';
+import { HomeService } from 'app/home/home.service';
 
 @Component({
-  selector: 'app-restaurent',
-  templateUrl: './restaurent.component.html',
-  styleUrls: ['./restaurent.component.scss']
+  selector: 'app-chat-bot',
+  templateUrl: './chat-bot.component.html',
+  styleUrls: ['./chat-bot.component.scss']
 })
-export class RestaurentComponent implements OnInit {
+export class ChatBotComponent implements OnInit {
 
   data : Date = new Date();
 
@@ -55,12 +55,11 @@ export class RestaurentComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  SearchRestaurents(){
-    // this.homeService.SearchHotels('Paris', new Date(), 100, 0, 0 , '$')
-    // .subscribe((data:any)=>{
-    //   console.log(data)
-    //   this.results = data.results
-    // })
+  SearchLocations(){
+    
+  }
+  SearchHotels(){
+    
   }
 
 }

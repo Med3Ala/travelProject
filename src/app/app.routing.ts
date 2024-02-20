@@ -12,10 +12,13 @@ import { HomeComponent } from './home/home.component';
 import { HotelComponent } from './home/hotel/hotel.component';
 import { RestaurentComponent } from './home/restaurent/restaurent.component';
 import { LocationComponent } from './home/location/location.component';
+import { ChatBotComponent } from './home/chat-bot/chat-bot.component';
+
 
 const routes: Routes =[
     { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: 'home',                 component: HomeComponent},
+    { path: 'chat',                 component: ChatBotComponent},
     { path: 'hotel',                component: HotelComponent},
     { path: 'restaurent',           component: RestaurentComponent},
     { path: 'location',             component: LocationComponent},
