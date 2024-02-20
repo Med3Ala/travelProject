@@ -1,0 +1,24 @@
+.image-container {
+  width: 27px;
+  height: 27px;
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 1px solid transparent;
+}
+
+.image-container img {
+  width: 100%; /* Assurez-vous que l'image remplit entièrement le conteneur */
+  height: auto;
+  display: block;
+}
+.now-ui-icons {
+  display: inline-block;
+  font: 14px/1 Nucleo Outline;
+  color: #f76038 !important;
+  font-size: inherit;
+  speak: none;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

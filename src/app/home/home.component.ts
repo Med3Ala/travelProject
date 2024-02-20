@@ -55,6 +55,21 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    window.botpressWebChat.init({
+      "composerPlaceholder": "Chat with bot",
+      "botConversationDescription": "This chatbot was built surprisingly fast with Botpress",
+      "botId": "5e986148-70a9-4d58-80aa-43c71cd78dc1",
+      "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+      "messagingUrl": "https://messaging.botpress.cloud",
+      "clientId": "5e986148-70a9-4d58-80aa-43c71cd78dc1",
+      "webhookId": "d16612fd-2b8c-4674-b897-845543f36f18",
+      "lazySocket": true,
+      "themeName": "prism",
+      "frontendVersion": "v1",
+      "showPoweredBy": true,
+      "theme": "prism",
+      "themeColor": "#2563eb"
+    });
   }
 
   SearchLocations(){
