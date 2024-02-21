@@ -33,7 +33,7 @@ export class LocationComponent implements OnInit {
 
   name = ""
   country = ""
-  price = [0,100];
+  price = [0,10000];
   review = [0,1000]
   rate = [0,5];
   checkIn: NgbDateStruct;
@@ -53,7 +53,7 @@ export class LocationComponent implements OnInit {
   }
 
   SearchLocations(){
-    this.homeService.SearchLocations(this.name).subscribe((data:any)=>{
+    this.homeService.SearchLocations(this.country).subscribe((data:any)=>{
       this.results = data.results;
     })
   }

@@ -32,7 +32,7 @@ export class ChatBotComponent implements OnInit {
   results = [];
 
   name
-  price = [0,100];
+  price = [0,10000];
   hotels
   restaurents
   intrestTargets;
