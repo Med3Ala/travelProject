@@ -41,85 +41,64 @@
   <div class="section section-basic" style="margin-top:200px">
     <div class="container">
             <div class="row">
-    <!-- filter -->
-                <div _ngcontent-fps-c64="" class="col-sm-6 col-lg-3">
-                    <div _ngcontent-fps-c64="" class="form-group">
-                        <input _ngcontent-fps-c64="" [(ngModel)]="name" type="text" value="" placeholder="Country Name" class="form-control">
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-3">
-                    <p class="category">Price ( $ )</p>
-                    <nouislider class="slider slider-primary" [connect]="true" [min]="0" [max]="100" [step]="1" [(ngModel)]="price" [tooltips]="true"></nouislider>
-                </div>
-                <div class="col-sm-6 col-lg-3">
-                    <p class="category">Search for :</p>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" [(ngModel)]="hotels" checked>
-                            <span class="form-check-sign"></span>
-                            Hotels
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" [(ngModel)]="restaurents">
-                            <span class="form-check-sign"></span>
-                            Restaurents
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" [(ngModel)]="intrestTargets">
-                            <span class="form-check-sign"></span>
-                            Attraction Targets
-                        </label>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-3">
-                    <p class="category">Rating</p>
-                    <div class="form-check form-check-radio">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="radio" [(ngModel)]="revieww1" name="exampleRadios" id="exampleRadios2" value="option3">
-                            <span class="form-check-sign"></span>
-                            Excellent
-                        </label>
-                    </div>
-                    <div class="form-check form-check-radio">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="radio" [(ngModel)]="revieww2" name="exampleRadios" id="exampleRadios1" value="option1">
-                            <span class="form-check-sign"></span>
-                            Very Good
-                        </label>
-                    </div>
-                    <div class="form-check form-check-radio">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="radio" [(ngModel)]="revieww3" name="exampleRadios" id="exampleRadios1" value="option2">
-                            <span class="form-check-sign"></span>
-                            Wonderful
-                        </label>
-                    </div>
-                    <div class="form-check form-check-radio">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="radio" [(ngModel)]="revieww4" name="exampleRadios" id="exampleRadios2" value="option4">
-                            <span class="form-check-sign"></span>
-                            Exceptional
-                        </label>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <h4>Check-in Date</h4>
+                <div class="col-4"></div>
+                <div class="col-4">
                     <div class="row">
-                        <div class="col-md-6">
-                            <div class="datepicker-container">
-                                <div class="form-group">
-                                  <input class="form-control datetimepicker" placeholder="06/07/2017"
-                                       name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker" (click)="d.toggle()" data-color="orange">
-                                      </div>
+                        <div _ngcontent-fps-c64="" class="col-12">
+                            <div _ngcontent-fps-c64="" class="form-group">
+                                <input _ngcontent-fps-c64="" [(ngModel)]="country" type="text" value="" placeholder="Country Name" class="form-control">
                             </div>
                         </div>
+                        <div _ngcontent-fps-c64="" class="col-12">
+                            <div _ngcontent-fps-c64="" class="form-group">
+                                <input _ngcontent-fps-c64="" [(ngModel)]="name" type="text" value="" placeholder="Hotel Name" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <p class="category">Price ( $ )</p>
+                            <nouislider class="slider slider-primary" [connect]="true" [min]="0" [max]="100" [step]="1" [(ngModel)]="price" [tooltips]="true"></nouislider>
+                        </div>
+                        <div class="col-12">
+                            <p class="category">Review</p>
+                            <nouislider class="slider slider-primary" [connect]="true" [min]="0" [max]="1000" [step]="10" [(ngModel)]="review" [tooltips]="true"></nouislider>
+                        </div>
+                        <div class="col-12">
+                            <p class="category">Rate</p>
+                            <nouislider class="slider slider-primary" [connect]="true" [min]="0" [max]="5" [step]="1" [(ngModel)]="rate" [tooltips]="true"></nouislider>
+                        </div>
+                
+                        <div class="col-12">
+                            <h4>Check-in Date</h4>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="datepicker-container">
+                                        <div class="form-group">
+                                          <input class="form-control datetimepicker" placeholder="06/07/2017"
+                                               name="dp" [(ngModel)]="checkIn" ngbDatepicker #d1="ngbDatepicker" (click)="d1.toggle()" data-color="orange">
+                                              </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--                 end collapse -->
+                        </div>
+                        <div class="col-12">
+                            <h4>Check-out Date</h4>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="datepicker-container">
+                                        <div class="form-group">
+                                          <input class="form-control datetimepicker" placeholder="06/07/2017"
+                                               name="dp" [(ngModel)]="checkOut" ngbDatepicker #d2="ngbDatepicker" (click)="d2.toggle()" data-color="orange">
+                                              </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--                 end collapse -->
+                        </div>
                     </div>
-                    <!--                 end collapse -->
                 </div>
+                <div class="col-4"></div>
+    <!-- filter -->
                 <div _ngcontent-fps-c64="" class="col-12">
                     <button _ngcontent-fps-c64="" (click)="SearchHotels()" class="btn btn-primary" style="float:right">Search Hotels</button>
                 </div>
@@ -181,20 +160,20 @@
                             {{ block.name }}
                         </h3>
                         <div class="row">
-                            <div class="col">
+                            <div class="col-12">
                                 {{ block.country }} {{ block.city }}
                             </div>
-                            <div class="col">
+                            <div class="col-12">
                                Price : {{ block.price }} $
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col">
+                            <div class="col-12">
                                 {{ block.description }}
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col">
+                            <div class="col-12">
                                 Review : {{ block.avgReview }}
                             </div>
                         </div>

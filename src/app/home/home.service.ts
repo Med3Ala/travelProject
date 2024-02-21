@@ -13,12 +13,10 @@ export class HomeService {
   urlLocations = "https://travel-import.onrender.com/api/v1/locations"
   urlHotels = "https://travel-import.onrender.com/api/v1/hotels"
   urlRestaurents = "https://travel-import.onrender.com/api/v1/restaurants"
-  
-  
-  // name, price, currency, rate, avgReview, reviewsCount, checkIn, checkOut, maxRate , minRate, maxReviewsCount , minReviewsCount
 
-  SearchHotels(name, price, currency, rate, avgReview, reviewsCount, checkIn, checkOut, maxRate , minRate, maxReviewsCount , minReviewsCount){
-    return this.http.get(`${this.urlHotels}?name=${name}&price=${price}&currency=${currency}&rate=${rate}&avgReview=${avgReview}&reviewsCount=${reviewsCount}&checkIn=${checkIn}&checkOut=${checkOut}&maxRate=${maxRate}&minRate=${minRate}&maxReviewsCount=${maxReviewsCount}&minReviewsCount=${minReviewsCount}`);
+  SearchHotels(name, country, avgReview, minPrice, minReviewCount, minRate, checkIn, checkOut){
+    //return this.http.get(`${this.urlHotels}?name=${name}&country=${country}&avgReview=${avgReview}&minPrice=${minPrice}&minReviewCount=${minReviewCount}&minRate=${minRate}&checkIn=${checkIn}&checkOut=${checkOut}`);
+    return this.http.get(`${this.urlHotels}?country=${country}`)
   }
 
   // name,currency,description,city,price,maxPrice , minPrice, reviewsCount, maxReviewsCount , minReviewsCount, rate, maxRate , minRate
