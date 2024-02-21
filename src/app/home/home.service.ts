@@ -26,6 +26,6 @@ export class HomeService {
 
   //name, country,reviewCount, maxReviewCount, minReviewCount, rate, maxRate, minRate
   searchRestaurents(name, country,reviewCount, maxReviewCount, minReviewCount, rate, maxRate, minRate){
-    return this.http.get(`${this.urlRestaurents}?name=${name}&country=${country}&reviewCount=${reviewCount}&maxReviewCount=${maxReviewCount}&minReviewCount=${minReviewCount}&rate=${rate}&maxRate=${maxRate}&minRate=${minRate}`)
+    return this.http.get(`${this.urlRestaurents}?name=${name}`)
   }
 }

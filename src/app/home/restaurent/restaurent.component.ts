@@ -56,11 +56,10 @@ export class RestaurentComponent implements OnInit {
   }
 
   SearchRestaurents(){
-    // this.homeService.SearchHotels('Paris', new Date(), 100, 0, 0 , '$')
-    // .subscribe((data:any)=>{
-    //   console.log(data)
-    //   this.results = data.results
-    // })
+    this.homeService.searchRestaurents(this.name, this.price[0], this.price[1], this.hotels, this.restaurents, this.intrestTargets, this.revieww1, this.revieww2).subscribe((data:any)=>{
+      this.results = data.results;
+      console.log(this.results)
+    })
   }
 
 }
