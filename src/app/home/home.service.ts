@@ -20,8 +20,8 @@ export class HomeService {
   }
 
   // name,currency,description,city,price,maxPrice , minPrice, reviewsCount, maxReviewsCount , minReviewsCount, rate, maxRate , minRate
-  SearchLocations( name, currency, description, city, price, maxPrice , minPrice, reviewsCount, maxReviewsCount , minReviewsCount, rate, maxRate , minRate){
-    return this.http.get(`${this.urlLocations}?name=${name}&currency=${currency}&description=${description}&city=${city}&price=${price}&maxPrice=${maxPrice}&minPrice=${minPrice}&reviewsCount=${reviewsCount}&maxReviewsCount=${maxReviewsCount}&minReviewsCount=${minReviewsCount}&rate=${rate}&maxRate=${maxRate}&minRate=${minRate}`);
+  SearchLocations( name){
+    return this.http.get(`${this.urlLocations}?name=${name}`);
   }
 
   //name, country,reviewCount, maxReviewCount, minReviewCount, rate, maxRate, minRate

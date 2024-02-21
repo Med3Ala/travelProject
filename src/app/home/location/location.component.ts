@@ -31,16 +31,13 @@ export class LocationComponent implements OnInit {
 
   results = [];
 
-  name
+  name = ""
+  country = ""
   price = [0,100];
-  hotels
-  restaurents
-  intrestTargets;
-  revieww1;
-  revieww2;
-  revieww3;
-  revieww4;
-  model: NgbDateStruct;
+  review = [0,1000]
+  rate = [0,5];
+  checkIn: NgbDateStruct;
+  checkOut: NgbDateStruct;
 
   
 
@@ -56,11 +53,9 @@ export class LocationComponent implements OnInit {
   }
 
   SearchLocations(){
-    // this.homeService.SearchLocations('France', new Date(), 100, 0, 0 , '$')
-    // .subscribe((data:any)=>{
-    //   console.log(data)
-    //   this.results = data.results
-    // })
+    this.homeService.SearchLocations(this.name).subscribe((data:any)=>{
+      this.results = data.results;
+    })
   }
 
 }
